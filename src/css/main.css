@@ -1,0 +1,41 @@
+/* Header */
+
+.header {
+    width: 100%;
+    margin:0;
+    height:  70px; 
+    line-height: 70px;
+    background-color: #0c00e9;
+    top: 0;
+}
+
+.header .header-logo {
+    color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    float:left;
+    margin-left:20%;
+
+
+}
+
+.header .header-nav {
+    float: right;
+    margin-right: 20%;
+  
+}
+
+.header .header-nav a 
+{
+    color: #ffffff;
+    margin-right: 15px; 
+}
+.header .header-nav a:hover
+{
+    color: #0c00e9;
+    margin-right: 15px; 
+    background-color:#ffffff;
+    border-radius: 2px;
+    line-height: 25px;
+
+}
