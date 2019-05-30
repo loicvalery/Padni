@@ -39,3 +39,23 @@
     line-height: 25px;
 
 }
+
+/* Banner */
+.banner .banner-img {
+    position: relative;
+    background: url("src/img/background-index.jpg");
+    
+}
+
+.banner .banner-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:30%;
+    
+    
+}
+
+.banner h1,h2{
+    color:#ffffff;
+}
