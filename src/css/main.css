@@ -14,21 +14,22 @@
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
     float:left;
-    margin-left:20%;
+    margin-left:15%;
 
 
 }
 
 .header .header-nav {
     float: right;
-    margin-right: 20%;
+    margin-right: 15%;
   
 }
 
 .header .header-nav a 
 {
     color: #ffffff;
-    margin-right: 15px; 
+    margin-right: 15px;
+    padding: 25px 5px 27px 5px; 
 }
 .header .header-nav a:hover
 {
@@ -36,14 +37,16 @@
     margin-right: 15px; 
     background-color:#ffffff;
     border-radius: 2px;
-    line-height: 25px;
+    line-height: 24px;
+    padding: 25px 5px 27px 5px;
 
 }
 
 /* Banner */
+
+
 .banner .banner-img {
     position: relative;
-    background: url("src/img/background-index.jpg");
     
 }
 
@@ -57,5 +60,16 @@
 }
 
 .banner h1,h2{
-    color:#ffffff;
+    columns: #353535;
+}
+
+
+
+
+
+/* TUTORIALS */
+.notification .header-text {
+
+    background-color: #0c00e9;
+    color: #ffffff;
 }

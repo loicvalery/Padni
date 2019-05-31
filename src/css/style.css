@@ -1,0 +1,33 @@
+/*HEADER*/
+
+*{
+	margin:0;
+    padding:0;	
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+	background-color: #fff;
+    height: auto;
+	color:#515151;
+}
+h2 {
+	font-size: 38px !important;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height:40px;
+}
+p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight:300;
+	color:#464646;
+}
+li{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight:300;
+}
+b {
+	font-weight: bold;
+}
