@@ -80,7 +80,7 @@ h1{
 /*bouton chapitre*/
 a .bouton_chapitre, .bouton{
 	background-color: #0c00e9;
-	font-weight: : bold;
+	font-weight: bold;
 	color: white;
 	border-radius: 6px;
 	padding: 15%;
@@ -103,7 +103,7 @@ a:link{
 /*menu de Navigation des chapitres tutos*/
 section .nav_chapitres{
 	background-color: #0c00e9;
-	padding: 2%;
+	padding: 1% 0% 1% 0%;
 	position:fixed; 
 	right: 2%;
 	width: 10%;
@@ -115,6 +115,8 @@ section .nav_chapitres{
 	color: white;
 	padding: 3%;
 	margin: 2%;
+	width: 100%;
+	text-align: center;
 }
 
 .nav_chapitres{
