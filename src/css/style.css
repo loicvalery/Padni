@@ -49,12 +49,14 @@ body,section,div,.etape_tuto{
     margin:1%;
 }
 section{
-	width: 98%;
-	display: flex;
+	width: 65%;
 	max-width: 80%;
 }
-div{
+
+div, iframe{
 	padding: 2%;
+	max-width: 100%;
+	height:auto;
 }
 
 h1{
@@ -62,12 +64,11 @@ h1{
 	color: #0c00e9;
 }
 
+/*blocs tuto*/
 .etape_tuto{
 	background-color: #f2f2f2;
 	border-radius: 6px;
 	width: 800px;
-	/*padding: 1%;*/
-	/*max-width: 50%;*/
 }
 
 .etape_tuto img{
@@ -84,19 +85,40 @@ a .bouton_chapitre, .bouton{
 	border-radius: 6px;
 	padding: 15%;
 }
-
+/*
 .bouton_chapitre{
 	position: relative;
 	left: 270%;
 }
-
-
-
+*/
 a:link{
 	text-decoration: none;
 }
 
-.bouton_chapitre:hover{
+.nav_chapitres a:hover,input:hover{
 	background-color: white;
 	color: #0c00e9;
+}
+
+/*menu de Navigation des chapitres tutos*/
+section .nav_chapitres{
+	background-color: #0c00e9;
+	padding: 2%;
+	position:fixed; 
+	right: 2%;
+	width: 10%;
+	align-items: center;
+	margin-top: 15%;
+}
+
+.nav_chapitres a{
+	color: white;
+	padding: 3%;
+	margin: 2%;
+}
+
+.nav_chapitres{
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
 }
