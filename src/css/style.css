@@ -54,7 +54,7 @@ section{
 	max-width: 80%;
 }
 div{
-	padding: 1%;
+	padding: 2%;
 }
 
 h1{
@@ -66,7 +66,7 @@ h1{
 	background-color: #f2f2f2;
 	border-radius: 6px;
 	width: 800px;
-	padding: 1%;
+	/*padding: 1%;*/
 	/*max-width: 50%;*/
 }
 
@@ -77,14 +77,20 @@ h1{
 }
 
 /*bouton chapitre*/
-a .bouton_chapitre{
+a .bouton_chapitre, .bouton{
 	background-color: #0c00e9;
 	font-weight: : bold;
 	color: white;
 	border-radius: 6px;
 	padding: 15%;
-	
 }
+
+.bouton_chapitre{
+	position: relative;
+	left: 270%;
+}
+
+
 
 a:link{
 	text-decoration: none;
