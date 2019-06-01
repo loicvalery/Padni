@@ -77,13 +77,17 @@ h1{
 }
 
 /*bouton chapitre*/
-.bouton_chapitre{
+a .bouton_chapitre{
 	background-color: #0c00e9;
 	font-weight: : bold;
 	color: white;
 	border-radius: 6px;
-	padding: 3%;
+	padding: 15%;
+	
+}
 
+a:link{
+	text-decoration: none;
 }
 
 .bouton_chapitre:hover{
