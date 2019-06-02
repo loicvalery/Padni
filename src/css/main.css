@@ -42,6 +42,8 @@
     color: #ffffff;
 }
 
+
+
 /*blocs tuto*/
 .etape_tuto{
 	background-color: #f2f2f2;
@@ -223,3 +225,115 @@ section .nav_chapitres{
 	flex-direction: column;
 	border-radius: 6px;
 }
+
+
+/*PAGE CONTACT*/
+
+.loginboxcontact
+{
+
+    width: 50%;
+    height: 420px;
+    box-sizing: border-box;
+	margin: auto;
+	background-color: #f2f2f2;
+}
+
+
+.loginboxcontact p
+{
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+
+}
+.loginboxcontact a
+{
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+}
+
+.loginboxcontact input
+{
+
+	background-color: #0c00e9;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+	width: 98%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.loginboxcontact textarea
+{
+
+	background-color: #ffffff;
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+	width: 88%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.loginboxcontact input:hover
+{
+
+	background-color: #ffffff;
+    border: none;
+    color: #0c00e9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+	width: 98%;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.loginboxcontact input[type="text"],
+.loginboxcontact input[type="password"]
+{
+    background-color: #ffffff;
+    color: #0d0d0d;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 88%;
+	border-bottom: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.loginboxcontact input:hover[type="text"],
+.loginboxcontact input:hover[type="password"]
+{
+    background-color: #ffffff;
+    color: #0d0d0d;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    width: 88%;
+	border-bottom: 2px solid #0c00e9;
+	border-radius: 2px;
+}
+
