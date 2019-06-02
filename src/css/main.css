@@ -1,47 +1,15 @@
-/* Header */
+/* Menu */
 
-.header {
-    width: 100%;
-    margin:0;
-    height:  70px; 
-    line-height: 70px;
-    background-color: #0c00e9;
-    top: 0;
+.navbar-brand {
+    flex-wrap: wrap;
 }
 
-.header .header-logo {
-    color: #ffffff;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: bold;
-    float:left;
-    margin-left:15%;
-
-
+.navbar-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 2;
+    flex-wrap: wrap;
 }
-
-.header .header-nav {
-    float: right;
-    margin-right: 15%;
-  
-}
-
-.header .header-nav a 
-{
-    color: #ffffff;
-    margin-right: 15px;
-    padding: 25px 5px 27px 5px; 
-}
-.header .header-nav a:hover
-{
-    color: #0c00e9;
-    margin-right: 15px; 
-    background-color:#ffffff;
-    border-radius: 2px;
-    line-height: 24px;
-    padding: 25px 5px 27px 5px;
-
-}
-
 /* Banner */
 
 
@@ -67,9 +35,137 @@
 
 
 
-/* TUTORIALS */
+/* PAGE TUTORIALS */
 .notification .header-text {
 
     background-color: #0c00e9;
     color: #ffffff;
+}
+
+.inner{
+	width:60%;
+	margin:0 auto;
+}
+/*********************** LIST ***********************/
+
+.simpleListAnswer:hover{
+	/*background:#fff195;*/
+	cursor:pointer;
+}
+.simpleListAnswer, .quizzAnswer{
+	width: 100%;
+	background:#f2f2f2;
+	padding:9px;
+	margin-top:12px;
+	border:1px solid #d8d8d8;
+}
+.simpleListText{
+	margin-left:8px;
+	font-size: 19px;
+	color: #3d3d3d;
+}
+
+/***************************ANSWER REVEAL******************/
+.quizzAnswerC,.quizzAnswerF,.finalResult{
+	background: #fefefe;
+	border: 1px solid #ddd;
+}
+
+.answerReveal{
+	display: none;
+	width: 100%;
+}
+.answerHeader div{
+	color: #84f272;
+	margin-top:10px;
+}
+#bravo, #sorry{
+	width:100%;
+	margin-left:20px;
+	margin-top:30px;
+}
+.answerHeader{
+	margin-left:20px;
+	width:100%;
+}
+h3.correctMessage{
+	color: #88f078;
+	font-size: 30px;
+}
+h3.wrongMessage{
+	color:#ff1f1f;
+	font-size: 30px;
+}
+
+.fa.fa-check-circle, .fa.fa-times-circle {
+	padding-right:10px;
+}
+.correctAnswer{
+	background:#88f078;
+}
+
+.wrongAnswer{
+	background:#ff1f1f;
+}
+
+.fade{
+	opacity:.6;
+	cursor:default;
+}
+
+/*************************FINAL RESULT******************************/
+.finalResult{
+	width: 100%;
+	height:300px;
+	padding:0 10px;
+	margin-top:30px;
+	display: none;
+}
+
+.finalResult h4{
+	color:#797979;
+}
+
+.resultContainer p{
+	font-size:25px;
+}
+
+#halfText,#halfImage{
+	width:50%;
+	float:left;
+}
+
+#halfImage{
+	margin-top:-40px;
+}
+#halfImage img{
+  width:100%;
+}
+
+
+
+
+/*MENU FIXE TUTO*/
+section .nav_chapitres{
+	background-color: #0c00e9;
+	padding: 1% 0% 1% 0%;
+	position:fixed; 
+	right: 2%;
+	width: 10%;
+	align-items: center;
+	margin-top: 15%;
+}
+
+.nav_chapitres a{
+	color: white;
+	padding: 3%;
+	margin: 2%;
+	width: 100%;
+	text-align: center;
+}
+
+.nav_chapitres{
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
 }
