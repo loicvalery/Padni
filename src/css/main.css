@@ -42,107 +42,161 @@
     color: #ffffff;
 }
 
-.inner{
-	width:60%;
-	margin:0 auto;
+/*blocs tuto*/
+.etape_tuto{
+	background-color: #f2f2f2;
+	border-radius: 6px;
+	width: 800px;
 }
-/*********************** LIST ***********************/
 
-.simpleListAnswer:hover{
-	/*background:#fff195;*/
-	cursor:pointer;
+.etape_tuto img{
+	height: auto;
+	max-width: 700px;
+	max-width: 100%;
 }
-.simpleListAnswer, .quizzAnswer{
+
+/*bouton chapitre*/
+a .bouton_chapitre, .bouton{
+	background-color: #0c00e9;
+	font-weight: bold;
+	color: white;
+	border-radius: 6px;
+	padding: 3%;
+	cursor: pointer;
+}
+/*
+.bouton_chapitre{
+	position: relative;
+	left: 270%;
+}
+*/
+a:link{
+	text-decoration: none;
+}
+
+.nav_chapitres a:hover,input:hover{
+	background-color: white;
+	color: #0c00e9;
+}
+
+/*menu de Navigation des chapitres tutos*/
+section .nav_chapitres{
+	background-color: #0c00e9;
+	padding: 1% 0% 1% 0%;
+	position:fixed; 
+	right: 2%;
+	width: 10%;
+	align-items: center;
+	margin-top: 15%;
+}
+
+.nav_chapitres a{
+	color: white;
+	padding: 3%;
+	margin: 2%;
 	width: 100%;
-	background:#f2f2f2;
-	padding:9px;
-	margin-top:12px;
-	border:1px solid #d8d8d8;
-}
-.simpleListText{
-	margin-left:8px;
-	font-size: 19px;
-	color: #3d3d3d;
+	text-align: center;
 }
 
-/***************************ANSWER REVEAL******************/
-.quizzAnswerC,.quizzAnswerF,.finalResult{
-	background: #fefefe;
-	border: 1px solid #ddd;
+.nav_chapitres{
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
 }
 
-.answerReveal{
-	display: none;
-	width: 100%;
-}
-.answerHeader div{
-	color: #84f272;
-	margin-top:10px;
-}
-#bravo, #sorry{
-	width:100%;
-	margin-left:20px;
-	margin-top:30px;
-}
-.answerHeader{
-	margin-left:20px;
-	width:100%;
-}
-h3.correctMessage{
-	color: #88f078;
-	font-size: 30px;
-}
-h3.wrongMessage{
-	color:#ff1f1f;
-	font-size: 30px;
+/* PAGE LOGIN */
+
+.loginbox
+{
+
+    width: 50%;
+    height: 420px;
+    box-sizing: border-box;
+	background: url("file:///home/alexandre/Padni/src/img/desk-1081708_960_720.jpg");
+	background-repeat: no-repeat;
+	background-position: center; 
+    margin: auto;
 }
 
-.fa.fa-check-circle, .fa.fa-times-circle {
-	padding-right:10px;
+.loginbox p
+{
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+
 }
-.correctAnswer{
-	background:#88f078;
+.loginbox a
+{
+
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
 }
 
-.wrongAnswer{
-	background:#ff1f1f;
+.loginbox input
+{
+
+	background-color: #0c00e9;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+	width: 98%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.loginbox input:hover
+{
+
+	background-color: #ffffff;
+    border: none;
+    color: #0c00e9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+	width: 98%;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
-.fade{
-	opacity:.6;
-	cursor:default;
+.loginbox input[type="text"],
+.loginbox input[type="password"]
+{
+    background-color: #ffffff;
+    color: #0d0d0d;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 88%;
+	border-bottom: 2px solid #ffffff;
+	border-radius: 2px;
 }
 
-/*************************FINAL RESULT******************************/
-.finalResult{
-	width: 100%;
-	height:300px;
-	padding:0 10px;
-	margin-top:30px;
-	display: none;
+.loginbox input:hover[type="text"],
+.loginbox input:hover[type="password"]
+{
+    background-color: #ffffff;
+    color: #0d0d0d;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    width: 88%;
+	border-bottom: 2px solid #0c00e9;
+	border-radius: 2px;
 }
-
-.finalResult h4{
-	color:#797979;
-}
-
-.resultContainer p{
-	font-size:25px;
-}
-
-#halfText,#halfImage{
-	width:50%;
-	float:left;
-}
-
-#halfImage{
-	margin-top:-40px;
-}
-#halfImage img{
-  width:100%;
-}
-
-
 
 
 /*MENU FIXE TUTO*/
