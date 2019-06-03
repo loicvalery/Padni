@@ -1,44 +1,19 @@
-<<<<<<< HEAD
-
-/* Header */
-
-.header {
-    width: 100%;
-    margin:0;
-    height:  70px; 
-    line-height: 70px;
-    background-color: #0c00e9;
-    top: 0;
+/*Header*/
+header{
+	background-color: #0c00e9;
+	width: 100%;
+	height: 150px;
+	position: absolute;
 }
 
-.header .header-logo {
-    color: #ffffff;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: bold;
-    float:left;
-    margin-left:20%;
-
-
+#menu_principal{
+	margin-right: 10%;
+	position: relative;
+	left: 70%;
 }
 
-.header .header-nav {
-    float: right;
-    margin-right: 20%;
-  
-}
-
-.header .header-nav a 
-{
-    color: #ffffff;
-    margin-right: 15px; 
-}
-.header .header-nav a:hover
-{
-    color: #0c00e9;
-    margin-right: 15px; 
-    background-color:#ffffff;
-    border-radius: 2px;
-    line-height: 25px;
+#menu_principal a,#menu_connection a{
+	color:white;
 
 }
 /*parametres generaux*/
@@ -50,14 +25,18 @@ body,section,div,.etape_tuto{
     margin:1%;
 }
 section{
-	width: 65%;
 	max-width: 80%;
 }
 
 div, iframe{
 	padding: 2%;
 	max-width: 100%;
-	height:auto;
+	height: auto;
+}
+
+iframe{
+	min-width: 560px;
+	min-height: 315px;
 }
 
 h1{
