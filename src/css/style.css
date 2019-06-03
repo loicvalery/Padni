@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* Header */
 
@@ -84,6 +85,7 @@ a .bouton_chapitre, .bouton{
 	color: white;
 	border-radius: 6px;
 	padding: 15%;
+	cursor:pointer;
 }
 /*
 .bouton_chapitre{
@@ -98,29 +100,4 @@ a:link{
 .nav_chapitres a:hover,input:hover{
 	background-color: white;
 	color: #0c00e9;
-}
-
-/*menu de Navigation des chapitres tutos*/
-section .nav_chapitres{
-	background-color: #0c00e9;
-	padding: 1% 0% 1% 0%;
-	position:fixed; 
-	right: 2%;
-	width: 10%;
-	align-items: center;
-	margin-top: 15%;
-}
-
-.nav_chapitres a{
-	color: white;
-	padding: 3%;
-	margin: 2%;
-	width: 100%;
-	text-align: center;
-}
-
-.nav_chapitres{
-	display: flex;
-	flex-direction: column;
-	border-radius: 6px;
 }
