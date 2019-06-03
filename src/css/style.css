@@ -1,33 +1,92 @@
-/*HEADER*/
 
-*{
-	margin:0;
-    padding:0;	
+/* Header */
+
+.header {
+    width: 100%;
+    margin:0;
+    height:  70px; 
+    line-height: 70px;
+    background-color: #0c00e9;
+    top: 0;
+}
+
+.header .header-logo {
+    color: #ffffff;
     font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    float:left;
+    margin-left:20%;
+
+
 }
 
-body{
-	background-color: #fff;
-    height: auto;
-	color:#515151;
+.header .header-nav {
+    float: right;
+    margin-right: 20%;
+  
 }
-h2 {
-	font-size: 38px !important;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height:40px;
+
+.header .header-nav a 
+{
+    color: #ffffff;
+    margin-right: 15px; 
 }
-p {
-	font-size: 16px;
-	line-height: 24px;
-	font-weight:300;
-	color:#464646;
+.header .header-nav a:hover
+{
+    color: #0c00e9;
+    margin-right: 15px; 
+    background-color:#ffffff;
+    border-radius: 2px;
+    line-height: 25px;
+
 }
-li{
-	font-size: 16px;
-	line-height: 24px;
-	font-weight:300;
+/*parametres generaux*/
+body,section,div,.etape_tuto{
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1%;
 }
-b {
-	font-weight: bold;
+section{
+	width: 98%;
+	display: flex;
+	max-width: 80%;
+}
+div{
+	padding: 1%;
+}
+
+h1{
+	font-size: 35px;
+	color: #0c00e9;
+}
+
+.etape_tuto{
+	background-color: #f2f2f2;
+	border-radius: 6px;
+	width: 800px;
+	padding: 1%;
+	/*max-width: 50%;*/
+}
+
+.etape_tuto img{
+	height: auto;
+	max-width: 700px;
+	max-width: 100%;
+}
+
+/*bouton chapitre*/
+.bouton_chapitre{
+	background-color: #0c00e9;
+	font-weight: : bold;
+	color: white;
+	border-radius: 6px;
+	padding: 3%;
+
+}
+
+.bouton_chapitre:hover{
+	background-color: white;
+	color: #0c00e9;
 }
