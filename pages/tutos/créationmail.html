@@ -2,49 +2,141 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../../src/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
 	<title>Créer une boite mail</title>
 </head>
 <body>
-	   <header class="header">
-	       <a href="" class="header-logo" >MOn portfolio </a>
-	       <nav class="header-nav">
-		        <a href="#" >Accueil</a>
-		        <a href="#" >Tutoriels</a>
-		        <a href="#" >A propos de nous</a>
-		        <a href="#" >Contact</a>
-	    	</nav>
-		</header>
+		<header>
+			<div  class="header">
+				<nav class="header-nav">
+					 <a href="#" >Inscription</a>
+					 <a id="login_btn" href="#" >Connexion</a>
+					 <a href="">EN</a>
+				 </nav>
+				</div>
+
+		<div class="header_menu">
+			<h2 class="header_logo">PADNI</h2>
+			<input type="checkbox" id="header_input">
+			<label for="header_input" class="show-menu" >
+				<i id="icon_menu" class="fas fa-ellipsis-h">MENU</i>
+			</label>
+
+        <ul class="menu_link">
+			<a id="menu_btn" href="#">Accueil</a>
+			<a id="menu_btn" href="#">Tutoriels</a>
+			<a id="menu_btn" href="#">A propos de nous</a>
+			<a id="menu_btn" href="#">Contact</a>
+			<label for="header_input" class="hide-menu">
+					<i class="fas fa-times"></i>
+				</label>
+			
+
+		</ul>
+
+			</div>
+	    </header>
+		
+
+
 	<section>
-		<h1>Création d'une boite mail</h1>
+	
+
 <!--bloc présentation du tuto-->		
-		<div>
+		<div class="tuto_class">
+				<h1>Création d'une boite mail</h1>
 			<h2>Pourquoi créer une adresse mail</h2>
-			<iframe width="800" height="555" src="https://www.youtube.com/embed/_JJv1kkpxxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="100%" height="555" src="https://www.youtube.com/embed/_JJv1kkpxxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 <!--fin du bloc-->
+
+
 <!--bloc étape tuto-->
 		<h2>Comment créer son compte</h2>
-		<div class="etape_tuto">
-			<a href="images/creeruncompte.png"><img src="images/creeruncompte.png"alt="bouton création de compte google"title="créer un compte mail google"></a>
-			<P>-Pour commencer cliquer sur le bouton "créer un compte"</P>
-			<input class="bouton_chapitre" type="button" value="Accéder à la video" a href="">
+		<div class="tuto_class">
+		<p>Pour commencer à créer votre compte simplement et gratuitement cliquer sur le bouton "Créer un compte"</p>
+		<img src="images/creeruncompte.png" alt="bouton création de compte google" title="créer un compte mail google" width="50%">
 		</div>
+		<div class="tuto_class">
+		<input class="boutton_chapter" type="button" value="Accéder à la video" a href="">
+		</div>
+		<br/>
 <!--fin du bloc-->
+
+
 <!--bloc étape tuto-->
-		<div class="etape_tuto">
-			<a href="images/Coordonées.png"><img src="images/Coordonées.png"alt="formulaire de saisie mail"title="saise de coordonées"></a>
-			<P>-Remplissez ensuite les différents champs<br>-pour votre nom d'utilisateur il y a plusieurs cas de figure</P>
-			<input class="bouton_chapitre" type="button" value="Accéder à la video" a href="#video ?start=10">
+
+		<div class="tuto_class">
+				<p>Gmail vous invite alors à indiquer vos prénom et nom, puis à choisir un nom d’utilisateur ou un Pseudo pour permettre à la création du compte</p>
+		<img id="zoom_btn" src="images/Coordonées.png" alt="formulaire de saisie mail" title="saise de coordonées" width="100%">
 		</div>
+
+		<div class="tuto_class">
+			<input class="boutton_chapter" type="button" value="Accéder à la video" a href="#video ?start=10">
+		</div>
+		<br/>
+
+		<div class="tuto_class">
+				<p>Ensuite indiquer votre numéro de téléphone pour que votre compte soit sécurisée, puis votre date de naissance </p>
+				<img id="zoom_btn" src="images/Informations_complementaire.png" alt="formulaire de saisie mail" title="saise de coordonées" width="100%">
+				</div>
+			
+			<div class="tuto_class">
+				<input class="boutton_chapter" type="button" value="Accéder à la video" a href="#video ?start=10">
+				</div>
+				<br/>
+
+		<div class="tuto_class">
+				<p>Accepter les conditions de Règles de confidentialité et conditions d'utilisation puis cliquer sur "Créer un compte" </p>
+				<img id="zoom_btn" src="images/Condition-generals.png" alt="formulaire de saisie mail" title="saise de coordonées" width="100%">
+				</div>
+
+		<div class="tuto_class">
+				<p>Accepter les conditions de Règles de confidentialité et conditions d'utilisation puis cliquer sur "Créer un compte" </p>
+				<img id="zoom_btn" src="images/Condition-generals.png" alt="formulaire de saisie mail" title="saise de coordonées" width="100%">
+				</div>
+			
+			<div class="tuto_class">
+				<input class="boutton_chapter" type="button" value="Accéder à la video" a href="#video ?start=10">
+				</div>
+				<br/>
+	
+	
 <!--fin du bloc-->
-		<div>
-			<iframe id="video" width="800" height="555" src="https://www.youtube.com/embed/Rl1mk-AaR8Q?start=54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+		<div class="tuto_class">
+			<iframe id="video" width="100%" height="555" src="https://www.youtube.com/embed/Rl1mk-AaR8Q?start=54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 
 	</section>
 	
+
+	<footer>
+    <div class="footer_page">
+			<div><h3>Column 1</h3>	
+				<ul><a class="menu_btn" href="#">Accueil</a>
+				<a class="menu_btn" href="#">Tutoriels</a>
+				<a class="menu_btn" href="#">A propos de nous</a>
+				<a class="menu_btn" href="#">Contact</a>
+			</ul>
+			</div>
+	
+	
+			<div><h3>Column 2</h3>		
+			<ul><a class="menu_btn" href="#">Accueil</a>
+				<a class="menu_btn" href="#">Tutoriels</a>
+				<a class="menu_btn" href="#">A propos de nous</a>
+				<a class="menu_btn" href="#">Contact</a>
+			</ul>
+			</div> 
+
+		</div>
+		 
+	</footer>
 </body>
 </html>

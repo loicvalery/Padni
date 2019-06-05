@@ -1,92 +1,287 @@
+body
+{
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+
+}
+
+section {
+  margin: auto;
+  width: 55%;
+  text-align: center;
+
+}
+
+@media screen and (max-width:1024px)
+{
+  section {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  }
+
+
+.tuto_class {
+   background-color: #efefef;
+   padding: 2%;
+
+}
 
 /* Header */
 
 .header {
-    width: 100%;
-    margin:0;
-    height:  70px; 
-    line-height: 70px;
-    background-color: #0c00e9;
-    top: 0;
+  width: 100%;
+  margin:0;
+  height:  70px; 
+  line-height: 70px;
+  background-color: #0c00e9;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
+
 .header .header-logo {
-    color: #ffffff;
-    font-family: 'Varela Round', sans-serif;
-    font-weight: bold;
-    float:left;
-    margin-left:20%;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left:20%;
+
 
 
 }
 
 .header .header-nav {
-    float: right;
-    margin-right: 20%;
-  
+  margin-right: 5%;
+
 }
+@media screen and (max-width:768px)
+{
+  .header .header-nav {
+   margin-right: 0; 
+  }
+}
+
 
 .header .header-nav a 
 {
-    color: #ffffff;
-    margin-right: 15px; 
+  color: #ffffff;
+  margin-right: 15px; 
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+
 }
 .header .header-nav a:hover
 {
-    color: #0c00e9;
-    margin-right: 15px; 
-    background-color:#ffffff;
-    border-radius: 2px;
-    line-height: 25px;
+  color: #0c00e9;
+  margin-right: 15px; 
+  background-color:#ffffff;
+  border-radius: 2px;
+  line-height: 25px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+
 
 }
-/*parametres generaux*/
-body,section,div,.etape_tuto{
-    font-family: 'Varela Round', sans-serif;
+
+#login_btn {
+  color: #0c00e9;
+  margin-right: 15px; 
+  background-color:#ffffff;
+  border-radius: 2px;
+  line-height: 25px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+
+}
+/* MENU */
+
+.header_menu{
+  height: 100px;
+  background: #0c00e9;
+  padding: 0 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-left: 5%;
+}
+.header_logo{
+  margin-right: auto;
+  margin-top: 0%;
+}
+
+@media screen and (max-width:768px)
+{
+  .header_logo{
+    line-height: 70px;
+    margin-right: auto;
+  }
+
+}
+
+.menu_link{
+  line-height: 70px;
+  margin-right: 5%; 
+}
+
+@media screen and (max-width:804px)
+{
+  .menu_link{
+    line-height: 70px;
+    margin-right: 0;
+  }
+}
+.menu_link a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  
+}
+
+#menu_btn:hover {
+  color: #0c00e9;
+  background: #fff;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width:768px)
+{
+  #menu_btn:hover
+  {
+  color: #0c00e9;
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px 0;
+  }
+}
+
+.show-menu,.hide-menu{
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu{
+  display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+.show-menu i{
+  line-height: 100px;
+}
+
+@media screen and (min-width:768px)
+{
+  .show-menu {
+    display: none;
+  }
+}
+
+.menu_link a:hover,
+.show-menu:hover,
+.hide-menu:hover{
+  color: #ffffff;
+}
+
+#header_input{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu,.hide-menu{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin:1%;
-}
-section{
-	width: 98%;
-	display: flex;
-	max-width: 80%;
-}
-div{
-	padding: 1%;
-}
-
-h1{
-	font-size: 35px;
-	color: #0c00e9;
-}
-
-.etape_tuto{
-	background-color: #f2f2f2;
-	border-radius: 6px;
-	width: 800px;
-	padding: 1%;
-	/*max-width: 50%;*/
-}
-
-.etape_tuto img{
-	height: auto;
-	max-width: 700px;
-	max-width: 100%;
+  }
+  .menu_link{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0c00e9;
+    right: -100%;
+    text-align: center;
+    padding: 80px 0;
+    top: -12px;
+    line-height: 20px;
+  }
+  .menu_link a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .hide-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #header_input:checked ~ .menu_link{
+    right: 0;
+  }
 }
 
-/*bouton chapitre*/
-.bouton_chapitre{
-	background-color: #0c00e9;
-	font-weight: : bold;
-	color: white;
-	border-radius: 6px;
-	padding: 3%;
+#icon_menu {
+  font-family: 'Varela Round', sans-serif;
+}
+
+/* BOUTTON IN PAGE */
+
+.boutton_chapter {
+  background-color: #0c00e9;
+  color: #fff;
+  padding: 2%;
+  margin: 2%;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid #0c00e9;
+}
+
+ .boutton_chapter:hover {
+   background-color: #ffffff;
+   color: #0c00e9;
+   padding: 2%;
+   margin: 2%;
+   cursor: pointer;
+   border-radius: 2px;
+   border: 2px solid #ffffff;
+ }
+
+ /* FOOTER*/
+ .footer_page{
+  width: 100%;
+  margin:0;
+  height:  70px; 
+  background-color: #0c00e9;
+  display: flex;
+  align-items: flex-start;
+  
+ }
+
+.footer_page div {
+  width: 50%;
+  background-color: #0c00e9
+  color: #fff;
 
 }
 
-.bouton_chapitre:hover{
-	background-color: white;
-	color: #0c00e9;
+.footer_page h3 {
+  display: flex;
+  justify-content: center;
+}
+.footer_page a {
+  color: #fff;
+}
+.menu_btn{
+  display: flex;
+  flex-direction: column;
 }
