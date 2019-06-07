@@ -1,42 +1,55 @@
 /*Header*/
-header{
+header,footer{
 	background-color: #0c00e9;
 	width: 100%;
-	height: 150px;
-	position: absolute;
+	height: auto;
+	min-height: 47px;
 }
 
-#menu_principal{
-	margin-right: 10%;
-	position: relative;
-	left: 70%;
+footer{
+	display: flex;
+	justify-content: center;
+}
+footer p{
+	display: flex;
+	flex-direction: column;
 }
 
-#menu_principal a,#menu_connection a{
-	color:white;
-
+footer a{
+	display: flex;
+	flex-direction: row;
 }
+
+/*position menu*/
+.menu_principal,.top_menu div{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.top_menu div{
+	display: inline-block;
+}
+
+.menu_principal a,.top_menu a,footer a, footer p{
+	color: white;
+	margin: 5px;
+}
+.top_menu a{
+	margin-right: 20px;
+}
+
 /*parametres generaux*/
-body,section,div,.etape_tuto{
+body,div,.etape_tuto,.contenu{
     font-family: 'Varela Round', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin:1%;
+    padding: 1%;
 }
-section{
+.contenu{
 	max-width: 80%;
-}
-
-div, iframe{
-	padding: 2%;
-	max-width: 100%;
-	height: auto;
-}
-
-iframe{
-	min-width: 560px;
-	min-height: 315px;
 }
 
 h1{
@@ -66,16 +79,12 @@ a .bouton_chapitre, .bouton{
 	padding: 15%;
 	cursor:pointer;
 }
-/*
-.bouton_chapitre{
-	position: relative;
-	left: 270%;
-}
-*/
+
 a:link{
 	text-decoration: none;
 }
 
+/*effet bouton au survol*/
 .nav_chapitres a:hover,input:hover{
 	background-color: white;
 	color: #0c00e9;
